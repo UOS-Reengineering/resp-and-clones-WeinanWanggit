@@ -36,17 +36,34 @@ public class ExtractMethods {
     public static void foo_after_refactoring() {
         // TODO: uncomment the following lines and complete missing methods
 
-//        // initialise an array of random numbers with the size of 10
-//        int[] array1 = initialiseArray(10);
-//
-//        // print the array with a given delimiter
-//        printArrayWithDelimiter(array1, " ");
-//
-//        // initialise another array of random numbers with the size of 10
-//        int[] array2 = initialiseArray(10);
-//
-//        // print the array with a given delimiter
-//        printArrayWithDelimiter(array2, " ");
+        // initialise an array of random numbers with the size of 10
+        int[] array1 = initialiseArray(10);
+
+        // print the array with a given delimiter
+        printArrayWithDelimiter(array1, " ");
+
+        // initialise another array of random numbers with the size of 10
+        int[] array2 = initialiseArray(10);
+
+        // print the array with a given delimiter
+        printArrayWithDelimiter(array2, " ");
+    }
+
+    private static void printArrayWithDelimiter(int[] array1, String delimiter) {
+        // print the array with a given delimiter
+        for (int i = 0; i < array1.length; i++) {
+            System.out.print(array1[i] + delimiter);
+        }
+        System.out.println();
+    }
+
+    private static int[] initialiseArray(int length) {
+        // initialise an array of random numbers with the size of 10
+        int[] array1 = new int[length];
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = (int) (Math.random() * 10);
+        }
+        return array1;
     }
 
 

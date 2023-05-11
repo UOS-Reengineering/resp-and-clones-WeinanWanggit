@@ -26,7 +26,21 @@ public class BankAccount {
         this.balance = balance;
     }
 
+
     public Object getAccountNumber() {
         return accountNumber;
     }
+
+
+
+    // TODO: move this method to BankAccount class
+    public double obtainBalance() {
+        return this.balance;
+    }
+
+    // TODO: move this method to BankAccount class
+    public void addInterest() {
+        this.balance+=this.balance * this.interest;
+    }
+
 }
